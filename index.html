@@ -1,1 +1,122 @@
-saketh
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WAPH Team 07 Homepage</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #eef2f3, #8e9eab);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin: 0;
+    }
+
+    main {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .member-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .member-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .member-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #2c3e50;
+      margin-bottom: 15px;
+    }
+
+    .member-card a {
+      text-decoration: none;
+      color: #2980b9;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2c3e50;
+      color: white;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    @media screen and (max-width: 600px) {
+      .team {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>WAPH Team 07 - miniFacebook Project</h1>
+    <h2>Summer 2025</h2>
+  </header>
+
+  <main>
+    <h2>Meet the Team</h2>
+    <div class="team">
+      <!-- Member 1 -->
+      <div class="member-card">
+        <img src="images/saketh-headshot.png" alt="Member 1">
+        <h3>Saketh Nandan Reddy Karla</h3>
+        <p>AI Engineer</p>
+        <a href="https://saketh-nandan-reddy.github.io">View Profile</a>
+      </div>
+
+      <!-- Member 2 -->
+      <div class="member-card">
+        <img src="images/headshot.png" alt="Member 2">
+        <h3>Arnab Singh</h3>
+        <p>Full Stack Developer | Cybersecurity Enthusiast</p>
+        <a href="https://singha105.github.io">View Profile</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 WAPH Team 05 | University of Dayton
+  </footer>
+
+</body>
+</html>
+
